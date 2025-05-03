@@ -2,14 +2,223 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to Rishabesh's Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishabesh | Electrical Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial; background: #f5f5f5; text-align: center; padding: 50px; }
-    h1 { color: #333; }
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(45deg, #00bcd4, #3f51b5);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* About Section */
+    .about {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+    }
+
+    .about p {
+      font-size: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Skills Section */
+    .skills {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .skill-card {
+      display: inline-block;
+      background: #e3e3e3;
+      margin: 10px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+
+    .skill-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    /* Projects Section */
+    .projects {
+      background-color: #f4f4f4;
+      padding: 80px 20px;
+    }
+
+    .projects h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .project-item {
+      display: inline-block;
+      width: 250px;
+      margin: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:hover {
+      transform: scale(1.05);
+    }
+
+    .project-item img {
+      width: 100%;
+      height: 150px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .project-item h3 {
+      padding: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .project-item p {
+      padding: 0 10px 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 20px;
+      background-color: #00bcd4;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm Rishabesh!</h1>
-  <p>Welcome to my GitHub Pages site.</p>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hi, I'm Rishabesh</h1>
+    <p>Electrical Engineer | Web Developer | Problem Solver</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an Electrical Engineer with a passion for innovation and technology. I specialize in designing systems that bridge the gap between hardware and software. Whether it's circuit design, automation, or creating functional websites, I aim to deliver optimized solutions with efficiency and precision.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-card">
+      <h3>Circuit Design</h3>
+      <p>Experience with PCB design, simulation, and optimization.</p>
+    </div>
+    <div class="skill-card">
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript, Git, and GitHub for web projects.</p>
+    </div>
+    <div class="skill-card">
+      <h3>Automation</h3>
+      <p>Programming in Python and C++ for automation and control systems.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-item">
+      <img src="https://via.placeholder.com/250x150" alt="Project 1">
+      <h3>Solar Power System</h3>
+      <p>Designed a solar-powered system for residential applications.</p>
+    </div>
+    <div class="project-item">
+      <img src="https://via.placeholder.com/250x150" alt="Project 2">
+      <h3>Automation System</h3>
+      <p>Created a home automation system using IoT and Raspberry Pi.</p>
+    </div>
+    <div class="project-item">
+      <img src="https://via.placeholder.com/250x150" alt="Project 3">
+      <h3>Smart Traffic Light</h3>
+      <p>Developed a smart traffic light system to optimize traffic flow using sensors.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Feel free to reach out to me via <a href="mailto:rishabesh@example.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/rishabesh">LinkedIn</a>.</p>
+  </section>
+
 </body>
 </html>
