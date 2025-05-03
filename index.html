@@ -208,6 +208,40 @@
       font-weight: 600;
     }
 
+    .project-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+    
+    .project-gallery img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .project-gallery img:hover {
+      transform: scale(1.03);
+    }
+    
+    .project-details {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .project-details ul {
+      padding-left: 20px;
+    }
+    
+    .project-details li {
+      margin-bottom: 10px;
+    }
+
     .contact {
       background: linear-gradient(45deg, #00bcd4, #3f51b5);
       color: white;
@@ -294,6 +328,11 @@
         flex-direction: column;
         align-items: center;
       }
+      
+      .project-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -345,6 +384,31 @@
   <section class="projects">
     <div class="container">
       <h2>My Projects</h2>
+      
+      <!-- Color Sorting System Project -->
+      <div class="project-item" style="max-width: 800px; width: 100%;">
+        <h3>Automated Color Sorting System</h3>
+        <div class="project-gallery">
+          <img src="MCU BOARD.jpg" alt="Microcontroller Board">
+          <img src="CUSTOM PCB SHIELD.jpg" alt="Custom PCB Shield">
+        </div>
+        <div class="project-details">
+          <p>Designed and built a functional color sorting system with the following components and features:</p>
+          <ul>
+            <li><strong>TCS230 color sensor</strong> for accurate color detection</li>
+            <li><strong>Arduino-compatible microcontroller</strong> for system control</li>
+            <li><strong>OLED display</strong> for real-time feedback</li>
+            <li><strong>SG90 servo motor</strong> for precise sorting mechanism</li>
+            <li><strong>Automatic calibration</strong> to ambient lighting conditions</li>
+            <li><strong>Custom PCB shield</strong> designed for optimal component integration</li>
+            <li><strong>CAD-designed</strong> auto-feed armature, sensor mount, and token enclosure</li>
+          </ul>
+          <p>The system detects the color of tokens, displays the result on the OLED screen, and sorts each token into designated containers based on user selection.</p>
+          <a href="#" class="project-link">View Project Report →</a>
+          <a href="#" class="project-link" style="margin-left: 15px;">Watch Demo Video →</a>
+        </div>
+      </div>
+      
       <div class="projects-container">
         <div class="project-item">
           <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hardware Donation Program">
