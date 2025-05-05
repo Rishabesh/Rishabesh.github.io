@@ -154,7 +154,31 @@ h3 {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+/* Image Gallery Styles */
+.project-gallery {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
 
+.project-image {
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    object-fit: contain;
+    background: white;
+    padding: 0.5rem;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .project-image {
+        height: 150px;
+    }
+}
 .skills-container {
     display: flex;
     justify-content: space-between;
