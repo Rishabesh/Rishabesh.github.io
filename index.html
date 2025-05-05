@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Rishabesh, Electrical and Electronic Engineering student">
     <title>Rishabesh - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
 <body>
     <header>
         <div class="container">
-            <nav>
+            <nav aria-label="Main navigation">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -27,9 +28,9 @@
                 <h1>Hi, I'm Rishabesh</h1>
                 <p class="subtitle">Undergraduate Electrical and Electronic Engineering student</p>
                 <div class="social-links">
-                    <a href="https://github.com/rishabesh" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="www.linkedin.com/in/rishabesh" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/rishabesh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rishabesh" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -40,67 +41,67 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I’m an undergraduate Electrical & Electronic Engineering student at the University of Kent, with a passion for bridging hardware and intelligent systems.</p>
+                    <p>I'm an undergraduate Electrical & Electronic Engineering student at the University of Kent, with a passion for bridging hardware and intelligent systems.</p>
                     <p>My goal is to develop autonomous systems that combine robust electronics with adaptive intelligence—whether for industrial automation, assistive robotics, or sustainable energy solutions.</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/profile.jpg" alt="Rishabesh">
+                    <img src="images/profile.jpg" alt="Portrait of Rishabesh" width="300" height="300">
                 </div>
             </div>
         </div>
     </section>
 
-<section id="projects">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Colour Sorting System</h3>
-                </div>
-                
-                <!-- Add image gallery here -->
-                <div class="project-gallery">
-                    <img src="images/pcb-shield.jpg" alt="Custom PCB Shield for Colour Sorter" class="project-image">
-                    <!-- Add more images if needed -->
-                </div>
-    
-                <div class="project-content">
-                    <p>Designed and built an automated colour sorting system featuring:</p>
-                    <ul>
-                        <li>TCS230 colour sensor with ambient light calibration</li>
-                        <li>Arduino-compatible microcontroller</li>
-                        <li>OLED display for real-time feedback</li>
-                        <li>SG90 servo motor for mechanical sorting</li>
-                        <li>Custom PCB shield for component integration</li>
-                        <li>3D-printed enclosure and mechanical parts (CAD designed)</li>
-                    </ul>
-                    <p>The system detects token colours and sorts them into designated containers based on user's choice, complete with detailed documentation and demonstration video.</p>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn">View Project</a>
-                    <a href="#" class="btn btn-outline">Documentation</a>
-                </div>
-            </div>
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Colour Sorting System</h3>
+                    </div>
+                    
+                    <div class="project-gallery">
+                        <img src="images/pcb-shield.jpg" alt="Custom PCB Shield for Colour Sorter" class="project-image" loading="lazy">
+                    </div>
+        
+                    <div class="project-content">
+                        <p>Designed and built an automated colour sorting system featuring:</p>
+                        <ul>
+                            <li>TCS230 colour sensor with ambient light calibration</li>
+                            <li>Arduino-compatible microcontroller</li>
+                            <li>OLED display for real-time feedback</li>
+                            <li>SG90 servo motor for mechanical sorting</li>
+                            <li>Custom PCB shield for component integration</li>
+                            <li>3D-printed enclosure and mechanical parts (CAD designed)</li>
+                        </ul>
+                        <p>The system detects token colours and sorts them into designated containers based on user's choice, complete with detailed documentation and demonstration video.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn btn-outline">Documentation</a>
+                    </div>
+                </article>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>2D Platform Game</h3>
-                </div>
-                <div class="project-content">
-                    <p>Developed for OCR A-Level Computer Science:</p>
-                    <ul>
-                        <li>I developed a 2D platform game with AI opponents in python along with a detailed report on analysis, design, software development, testing and evaluation.</li>
-                    </ul>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn">View Code</a>
-                    <a href="#" class="btn btn-outline">Project Report</a>
-                </div>
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>2D Platform Game</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed for OCR A-Level Computer Science:</p>
+                        <ul>
+                            <li>2D platform game with AI opponents built in Python</li>
+                            <li>Comprehensive report covering analysis, design, development, testing and evaluation</li>
+                            <li>Object-oriented programming implementation</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Code</a>
+                        <a href="#" class="btn btn-outline">Project Report</a>
+                    </div>
+                </article>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="skills">
         <div class="container">
@@ -117,7 +118,8 @@
                 <div class="skill-category">
                     <h3>Frameworks</h3>
                     <ul>
-                        <li>Learning ROS</li>
+                        <li>ROS (Robot Operating System)</li>
+                        <li>Arduino Framework</li>
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -125,7 +127,7 @@
                     <ul>
                         <li>LTspice</li>
                         <li>Fusion 360</li>
-                        <li>Arduino</li>
+                        <li>STM32CubeIDE</li>
                     </ul>
                 </div>
             </div>
